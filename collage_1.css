@@ -1,0 +1,248 @@
+.centered
+{
+  text-align: center;
+}
+
+.red
+{
+  color: red;
+
+}
+
+body {
+  padding: 0;/*Padding is the space between the content of an element and its border.*/
+  margin: 0;/*Margin is the space between an element and other elements around it.*/
+  font-family: Open Sans, sans-serif;/*the fornt family of the text*/
+  background-color: #f0f0f0;
+}
+
+header 
+{
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  display: flex;/*Flexbox is a layout mode that allows you to easily create flexible and responsive layouts.*/
+  flex-direction: column;/*is a CSS property that specifies the direction of the flex items in a flix layout.*/
+  align-items: center;
+  padding: 2em;
+}
+
+form 
+{
+  width: 80%;
+  margin: 40px auto;/*The margin property is used to set the space between an element and other elements around it.*/
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;/*is a shorthand property that sets the border of an element.*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*is a CSS property that adds a shadow effect to an element.*/
+}
+
+#table2
+{
+  
+  border-collapse: collapse;/* it means that the borders of adjacent cells will be merged into a single border.*/
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  opacity: 1;
+
+}
+
+
+
+  /* Style the form labels and inputs */
+label 
+{
+  display: block;/*it means that the element will be displayed as a block-level element.*/
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] 
+{
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+ /* Style the buttons */
+ button[type="submit"], button[type="reset"] 
+ {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;/*is a CSS property that sets the radius of the corners of an element's border.*/
+  cursor: pointer;/*is a CSS property that specifies the mouse cursor to be displayed when pointing over an element.*/
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover 
+{
+  background-color: #3e8e41;
+}
+
+.background {
+  position: absolute;/* is a CSS property that sets the positioning scheme of an element.*/
+  height: 100%;
+  width: 100%;
+  background-image: url("'https://www.wns.co.za/Portals/0/Images/HeaderBanner/desktop/1087/53/travel_HD.jpg'");
+  background-size: cover;/*it means that the background image will be scaled to cover the entire container*/
+  background-position: center;
+  filter: blur(10px);/*to blur out the background image */
+  z-index: -1;/*is used to ensure that the background image is displayed behind all other elements on the page*/
+}
+
+.text-container {
+  text-align: center;
+}
+
+
+body 
+{
+   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;/*ensures that the background image is not tiled or repeated in any way, and is displayed as a single instance.*/
+  background-attachment: fixed;/* it means that the background image is fixed relative to the viewport, and does not scroll with the element. */
+    
+
+}
+
+.rainbow {
+    animation: rainbow 2s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      color: #ff0000; /* red */
+    }
+    20% {
+      color: #ffa500; /* orange */
+    }
+    40% {
+      color: #ffff00; /* yellow */
+    }
+    60% {
+      color: #00ff00; /* green */
+    }
+    80% {
+      color: #0000ff; /* blue */
+    }
+    100% {
+      color: #ff00ff; /* purple */
+    }
+  }
+
+#table
+{
+  border:2px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  opacity: 1;
+
+}
+
+p 
+{
+  font-size: 18px; /* increase font size to 24px */
+
+}
+
+#data
+{
+  border:2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px; /* increase font size to 24px */
+
+}
+
+button
+{
+  font-size: 20px;
+}
+
+/*a container to store the slideshow in*/
+.slideshow-container 
+{
+  position:relative;
+  width: 100%; /* Set width to 100% of viewport width */
+  height: 500px; /* Set height to 100% of viewport height */
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+  text-align: center;
+  margin:40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The slideshow images */
+.slideshow-container img 
+{
+ width: 100%; /* set the width to 100% of the container */
+  height: 500px; /* set the height to a fixed value */
+  object-fit: cover; /* make the image cover the entire container */
+}
+
+/*style for the class style*/
+.slide {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set width to 100% of parent container */
+  height: 100%; /* Set height to 100% of parent container */
+  object-fit: cover; /* Scale the image to cover the entire container */
+  background-position: center;
+  transition: opacity 1s;
+  border-radius: 10px;
+}
+
+/*when an element has both slide and active makes the slide visible and displays it as a block element*/
+.slide.active 
+{
+  display: block;
+  opacity: 1;
+}
+  
+/*when an element has both slide and inactive this makes the slide completely transperent*/
+.slide:not(.active) {
+  opacity: 0;
+}
+
+@keyframes slideAnimation {
+  50% {
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.slideshow-container {
+  animation: slideAnimation 6s infinite;
+}
+

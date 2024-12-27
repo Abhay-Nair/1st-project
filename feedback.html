@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="feedback.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="feedback-container">
+    <h2>Rate Your Experience</h2>
+    <div class="star-rating">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <span id="rating-text"></span>
+    <div class="rating-categories">
+      <label for="overall-experience">Overall experience:</label>
+      <select id="overall-experience">
+        <option value="1">1 (Very poor)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="3">3 (Average)</option>
+        <option value="4">4 (Good)</option>
+        <option value="5">5 (Excellent)</option>
+      </select>
+      <label for="quality-of-service">Quality of service:</label>
+      <select id="quality-of-service">
+        <option value="1">1 (Very poor)</option>
+        <option value="2">2 (Poor)</option>
+        <option value="3">3 (Average)</option>
+        <option value="4">4 (Good)</option>
+        <option value="5">5 (Excellent)</option>
+      </select>
+    </div>
+    <div class="emotional-feedback">
+      <label for="emotional-feedback">How did you feel about your experience?</label>
+      <select id="emotional-feedback">
+        <option value="1">1 (Very dissatisfied)</option>
+        <option value="2">2 (Dissatisfied)</option>
+        <option value="3">3 (Neutral)</option>
+        <option value="4">4 (Satisfied)</option>
+        <option value="5">5 (Very satisfied)</option>
+      </select>
+      <br><br>
+    </div>
+    <div class="comments-section">
+      <label for="comments">Comments:</label>
+      <textarea id="comments" rows="5" cols="30"></textarea>
+      <br><br>
+    </div>
+    <div class="contact-information">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+      <br><br>
+    </div>
+    <div class="anonymous-feedback">
+      <label for="anonymous">Would you like to provide anonymous feedback?</label>
+      <input type="checkbox" id="anonymous" name="anonymous">
+      <br><br>
+    </div>
+    <div class="file-upload">
+      <label for="file">Upload a file:</label>
+      <input type="file" id="file" name="file">
+    <br><br>
+    </div>
+    <div class="net-promoter-score">
+      <label for="nps">On a scale of 0-10, how likely are you to recommend our service to a friend or colleague?</label>
+      <select id="nps">
+        <option value="0">0 (Not at all likely)</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10 (Extremely likely)</option>
+      </select>
+    </div>
+    <br><br>
+    <button id="submit-feedback">Submit Feedback</button>
+  </div>
+  <script src="feedback.js"></script>
+</body>
+</html>

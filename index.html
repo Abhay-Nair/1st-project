@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website@V2</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Welcome to My  Website!</h1>
+        <p>My name is <strong>Abhay</strong> and I am a <em>Novice SorftwareEngineer</em></p>
+    </header>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/564/515/original/programming-code-coding-or-hacker-sign-programming-code-icon-made-with-binary-code-in-wireframe-hands-digital-binary-data-and-digital-code-matrix-background-with-digits-1-0-illustration-vector.jpg" style="width:100%">
+                <div class="text">Coding</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://www.wellandgood.com/wp-content/uploads/2019/12/Stocksy-cooking-for-one-Andrey-Pavlov.jpeg" style="width:100%">
+                <div class="text">Cooking</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://th.bing.com/th/id/OIP.cfBlwoBTxTGUgFvQ_bQicQHaE8?rs=1&pid=ImgDetMain" style="width:100%">
+                <div class="text">Playing Music</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br><br>
+        <h2>My Hobbies</h2>
+        <div class="hobbies">
+            <div class="hobby">
+                <h3>Coding</h3>
+                <p>Creating amazing applications and websites.</p>
+            </div>
+            <div class="hobby">
+                <h3>Cooking</h3>
+                <p>Experimenting with flavors and recipes.</p>
+            </div>
+            <div class="hobby">
+                <h3>Playing Music</h3>
+                <p>Expressing creativity through melodies.</p>
+            </div>
+        </div>
+        <p>This is my second successful functioning website!</p>
+        
+        <button id="funFactButton">Show Fun Fact</button>
+        <p id="funFact" style="font-style: italic; margin-top: 10px;"></p>
+
+        <button onclick="location.href='collage_1.html'">Go Register</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Abhay Nair</p>
+    </footer>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

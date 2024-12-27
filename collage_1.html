@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> <!--specifies the character encoding of the HTML document.-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Microsoft-specific header that tells Internet Explorer (IE) which version of the browser to use to render the page.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Set the viewport settings to ensure that the page is displayed correctly on different devices and screen sizes.-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link href="collage_1.css" rel="stylesheet">
+        <title>Registration Form</title>
+    </head>
+        <div class="background"></div>
+        <div class="text-container">
+        <header>
+        <h1 >REGISTRATION FOR YOUR TRAVELLING</h1>
+        </header>
+        <div class="slideshow-container">
+            <div class="slide">
+              <img src=https://www.pixelstalk.net/wp-content/uploads/2016/08/HD-World-Travel-Desktop-Background-620x388.jpg alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src=https://c4.wallpaperflare.com/wallpaper/832/520/917/nature-snow-water-boat-wallpaper-preview.jpg alt="Image 2">
+            </div>
+            <div class="slide">
+              <img src=https://www.theghanareport.com/wp-content/uploads/2021/07/tourism.jpg alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src=https://e360.yale.edu/assets/site/MayaBay_Thailand_shutterstock_371250478_web.jpg alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src=https://wallpapercave.com/wp/wp5391569.jpg alt="Image 5">
+            </div>
+            <div class="slide">
+                <img src=https://kmcmaggroup.com/media/665203/tourism-bubbles-and-digital-tools-to-aid-philippine-tourism-amid-covid-19.jpg alt="Image 6">
+            </div>
+            <div class="slide">
+                <img src=https://nepaltourism.org/wp-content/uploads/2020/01/bigstock-Kathmandu-Nepal-November-334855153.jpg alt="Image 7">
+            </div>
+            <div class="slide">
+                <img src=https://webunwto.s3.eu-west-1.amazonaws.com/2020-07/wtd-old-event.jpg alt="Image 8">
+            </div>
+            <div class="slide">
+                <img src=https://www.busytourist.com/wp-content/uploads/2019/05/things-to-do-in-Busan-720x405.jpg.webp alt="Image 9">
+            </div>
+            <div class="slide">
+                <img src=https://ychef.files.bbci.co.uk/2000x1125/p05vv3wd.jpeg alt="Image 10">
+            </div>
+        </div>
+        <br>
+        <form method="post" action="feedback.html">
+            <main>
+            <p><strong>YOUR DETAILS</strong></p>
+            <table id="table2">
+                <tr>
+                    <td><label for="name">Enter your name:</label></td>
+                    <td><input id="name" autofocus autocomplete="off" placeholder="Name" type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label for="adress1">Address:</label></td>
+                    <td><input id="adress1" autocomplete="off" placeholder="Address" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Enter your email:</label></td>
+                    <td><input id="email" autocomplete="off" placeholder="Email" type="email" pattern=".+@gmail\.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Enter your password:</label></td>
+                    <td><input id="password" autocomplete="off" placeholder="Password" type="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><lable for="strength" id="password-strength" aria-autocomplete="off" aria-placeholder="strength"></lable></td>
+                </tr>
+                <tr>
+                    <td><label for="check">Re-enter your password:</label></td>
+                    <td><input id="check" autocomplete="off" placeholder="Password" type="password" required></td>
+                    <td><lable for="check" id="check-password" aria-autocomplete="off" aria-placeholder="strength"></lable></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Enter your phone number:</label></td>
+                    <td><input id="phone" autocomplete="off" placeholder="Number" type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="sick">Are you differently abled:</label></td>
+                    <td>
+                        <input id="sick" autocomplete="off" type="radio" name="sick" value="yes">Yes
+                        <input id="sick" autocomplete="off" type="radio" name="sick" value="no">No
+                    </td>
+                </tr>
+            </table> 
+            <p><strong>YOUR TRAVEL DETAILS </strong></p>
+            <table id="table">
+                <tr>
+                    <td id="data"><b>Enter your gender</b></td>
+                    <td id="data"><input type="radio" name="gender" value="male">Male</td>
+                    <td id="data"><input type="radio" name="gender" value="female">Female</td>
+                    <td id="data"><input type="text" name="gender" value="other" class="rainbow">other</td>
+                </tr>
+                <tr>
+                    <td><b>Enter your age</b></td>
+                    <td id="data"><input type="radio" name="age" value="18-25">18 -25</td>
+                    <td id="data"><input type="radio" name="age" value="26-40">26-40</td>
+                    <td id="data"><input type="radio" name="age" value="40+">40+</td>
+                </tr>
+                <tr>
+                    <td><b>Does anyone in your group have sickness</b></td>
+                    <td id="data"><input type="radio" name="sickness" value="yes">Yes</td>
+                    <td id="data"><input type="radio" name="sickness" value="no">No</td>
+                    <td id="data"><input type="text" placeholder="what is it ">fill if yes</td>
+                </tr>
+
+                <tr>
+                    <td id="data"><b>Where do you want to visit</b></td>
+                    <td id="data"><input type="text" placeholder="Country"></td>
+                    <td id="data"><input type="text" placeholder="city"></td>
+                </tr>
+                <tr>
+                    <td><b>How many days do you want to stay</b></td>
+                    <td id="data">From:<input type="date" placeholder="from"></td>
+                    <td id="data">To:<input type="date" placeholder="to"></td>
+                </tr>
+                <tr>
+                    <td id="data"><b>How many people are there for travelling</b></td>
+                    <td id="data"><input type="number" placeholder="adult"></td>
+                    <td id="data"><input type="number" placeholder="children"></td>
+                    <td id="data"><input type="number" placeholder="Elderly"></td>
+                </tr>
+                <tr>
+                    <td id="data"><b>What will be the preffered mode of transportation</b></td>
+                    <td id="data"><input type="radio" name="travel" value="car">Car</td>
+                    <td id="data"><input type="radio" name="travel" value="flight">Flight</td>
+                    <td id="data"><input type="radio" name="travel" value="train">Train</td>
+                </tr>
+                <tr>
+                    <td id="data"><b>What is your budget</b></td>
+                    <td id="data"><input type="number" name="budget" placeholder="Budget"></td>
+                </tr>
+
+
+            </table>
+        </main>
+        <button type="submit" id="1">Submit</button>
+        <button type="reset" id="2">reset</button>
+        </form>
+
+    <script src="check.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.feedback-container 
+{
+    max-width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+  
+.star-rating 
+{
+    font-size: 24px;
+    color: #ccc;
+}
+  
+.star 
+{
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative;
+}
+
+.star::before 
+{
+    font-size: 24px;
+}
+  
+.star:hover 
+{
+    color: #ffd700;
+    transition: color 0.2s ease-in-out;
+}
+  
+.star.selected 
+{
+    color: #ffd700;
+}
+
+.rating-categories 
+{
+    margin-bottom: 20px;
+}
+
+.rating-categories label 
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rating-categories select 
+{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#output 
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+#submit-feedback 
+{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#submit-feedback:hover 
+{
+    background-color: #3e8e41;
+}
